@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatibel" content="IE"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/res.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+
+    <div class="set-inset">
+        <nav style="box-shadow:1px 1px 10px #571c27;" class="light-mc header-color">
+            <div class=" d-md-none d-block">
+                <input type="checkbox" name="" id="inputTag">
+                <div class="move">
+                    <img src="assets/images/Untitled-2.png" width="80px" style="margin-top: 10px;">
+                </div>
+                <label for="inputTag" class="hamb " style="top: 20px;">
+                    <span class="top light-mb"></span>
+                    <span class="middel light-mb"></span>
+                    <span class="bottom light-mb"></span>
+
+                </label>
+                <div class="search-bar-container active ">
+                    <img src="assets/images/search (2).png" class="magnifier set-filter" />
+
+                    <input type="text" class="input" placeholder="جستجو کنید ..." />
+
+                </div>
+                <ul class="sidebar back-side"
+                    style="z-index: 20;background-color: rgb(252,237,237);box-shadow:1px 1px 10px #fd7970;padding:60px 10px 0 0 ;text-align: start;">
+
+
+                    <p class="dark-mc"> •سریال جدید</p>
+
+                    <p class="dark-mc">•فیلم جدید </p>
+
+                    <p class="dark-mc">•سریال قدیمی</p>
+
+                    <p class="dark-mc">•سریال کمدی</p>
+
+                    <p class="dark-mc">•سریال درام</p>
+
+                </ul>
+
+            </div>
+            <div style="padding: 15px 130px;">
+                <ul class="nav-options d-md-flex d-none">
+                    <li class="po-re nav-mg"> سریال جدید
+                        <i class="fa-solid fa-chevron-down down-icon"></i>
+                        <div class="option-subset">
+                            <ul class="ul-subsets" style="z-index: 10;">
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-mg">فیلم جدید
+                        <i class="fa-solid fa-chevron-down down-icon"></i>
+                        <div class="option-subset">
+                            <ul class="ul-subsets" style="z-index: 10;">
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-mg">سریال قدیمی
+                        <i class="fa-solid fa-chevron-down down-icon"></i>
+                        <div class="option-subset">
+                            <ul class="ul-subsets" style="z-index: 10;">
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-mg">سریال کمدی
+                        <i class="fa-solid fa-chevron-down down-icon"></i>
+                        <div class="option-subset">
+                            <ul class="ul-subsets" style="z-index: 10;">
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-mg">سریال درام
+                        <i class="fa-solid fa-chevron-down down-icon"></i>
+                        <div class="option-subset">
+                            <ul class="ul-subsets" style="z-index: 10;">
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                                <a href="#">
+                                    <li>لوریپسوم</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <button id="theme-switch" class="mode-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!--section 1-->
+        <br>
+        <div class="swiper mySwiper " style="z-index: -1; height: 300px;">
+            <div class="swiper-wrapper " style="padding: 0;height: 300px;">
+                <div class="swiper-slide first-slide p-0 " style="height: 300px;"><img
+                        src="assets/images/iHKMD7aJXF.webp">
+                    <div class="slider-details">
+                        <div class="detail">
+                            <br>
+                            <h3 class="h-sm">لورم ایپسوم متن</h3>
+
+                            <br><br>
+                            <button class="spanb-sm" style="margin-top: 60px; margin-right: -60px;">لورم ایپسوم
+                                متن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"><img src="assets/images/VddU43r9Ts.webp">
+                    <div class="slider-details">
+                        <div class="detail">
+                            <br>
+                            <h3 class="h-sm">لورم ایپسوم متن</h3>
+
+
+                            <br><br>
+                            <button class="spanb-sm" style="margin-top: 60px; margin-right: -60px;">لورم ایپسوم
+                                متن</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination" style="padding: 0;"></div>
+        </div>
+        <br><br>
+        <section class="input-sec">
+            <div class="search row">
+
+                <div class="col-12 col-md-10 " style="position: relative;">
+                    
+                    <img src="assets/images/search.png" style="width: 20px; " class="input-mag">
+                    <input type="text" placeholder="اسم فیلم یا سریال مدنظر خود را وارد کنید">
+                </div>
+                <div class="col-6 col-md-1 btns">
+                    <button class="delete-btn dark-mc ">حذف </button>
+                </div>
+                <div class="col-6 col-md-1 btns">
+                    <a href="#"> <button class="search-btn"> جستجو</button> </a>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section class="bg-gray-50 ">
+            <div class="mx-auto new-series max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+                <div class="header-sec">
+                    <h4 class="spanb-sm dark-mc " style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای
+                    </h4>
+                    <a href="#"><span class="all" style="font-weight: bolder;">مشاهده همه</span> </a>
+                </div>
+                <br><br>
+                <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+                    <div id="keen-slider" class="keen-slider">
+                  
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <br><br>
+        <section class="bg-gray-50 ">
+            <div class="mx-auto new-series max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+                <div class="header-sec">
+                    <h4 class="spanb-sm  dark-mc" style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای
+                    </h4>
+                    <a href="#"><span class="all" style="font-weight: bolder;">مشاهده همه</span> </a>
+                </div>
+                <br><br>
+                <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+                    <div id="keen-slider2" class="keen-slider">
+                 
+                    </div>
+
+                </div>
+            </div>
+   
+    </section>
+    <br><br>
+    <section class="row movie-sec">
+        <div class="header-sec movie-title col-12">
+            <h4 class="spanb-sm  dark-mc" style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای</h4>
+            <a href="#"><span class="all" style="font-weight: bolder;">مشاهده همه</span> </a>
+            <br><br><br>
+        </div>
+        <br><br>
+        <div class="movie-sec d-xl-flex d-none">
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+        </div>
+        <div class="movie-sec d-xl-flex d-none" style="margin-top: 30px;">
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+        </div>
+        <div class="d-xl-none d-flex">
+            <div id="keen-slider5" class="keen-slider">
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br>
+    <section class="bg-gray-50 ">
+        <div class="mx-auto new-series max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+            <div class="header-sec">
+                <h4 class="spanb-sm  dark-mc" style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای</h4>
+                <a href="#"><span class="all" style="font-weight: bolder;">مشاهده همه</span> </a>
+            </div>
+            <br><br>
+            <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+                <div id="keen-slider3" class="keen-slider">
+                
+                </div>
+
+            </div>
+        </div>
+       
+    </section>
+    <br><br>
+    <section class="bg-gray-50 ">
+        <div class="mx-auto new-series max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+            <div class="header-sec">
+                <h4 class="spanb-sm  dark-mc" style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای</h4>
+                <a href="#"><span class="all" style="font-weight: bolder;">مشاهده همه</span> </a>
+            </div>
+            <br><br>
+            <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+                <div id="keen-slider4" class="keen-slider">
+                
+                </div>
+
+            </div>
+        </div>
+       
+    </section>
+    <br><br>
+    <section class="row movie-sec">
+        <div class="header-sec movie-title col-12">
+            <h4 class="spanb-sm  dark-mc" style="font-weight:bolder; margin-right: -30px;">جدیدترین سریال های کره ای</h4>
+            <a href="#"><span class="all watch-more" style="font-weight: bolder;">مشاهده همه</span> </a>
+            <br><br><br>
+        </div>
+        <br><br>
+        <div class="movie-sec d-xl-flex d-none">
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+        </div>
+        <div class="movie-sec d-xl-flex d-none" style="margin-top: 30px;">
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+            <div class="col-md-3 movie-hover">
+                <a href="#">
+                    <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                    <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                    <span class="">فصل X قسمت X</span>
+                    <button>دوبله فارسی</button>
+                </a>
+            </div>
+        </div>
+        <div class="d-xl-none d-flex">
+            <div id="keen-slider6" class="keen-slider">
+
+
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="keen-slider__slide">
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 movie-hover">
+                        <a href="#">
+                            <img src="assets/images/Inside-Out-2-2024-Header.jpg">
+                            <h3 class="spanb-sm ">سریال لوریپسوم</h3>
+                            <span class="">فصل X قسمت X</span>
+                            <button>دوبله فارسی</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br>
+    <footer>
+        <div class="row">
+            <div class="col-12 footer">
+            </div>
+            <div class="col-12  footer">
+                <div class="telegram">
+                    <a href="https://t.me/Dramoir">
+                        <div style="display: inline;">
+                            <i class="fa-brands fa-telegram" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="telegram-info">
+                            <span>عضویت در کانال تلگرام</span><br>
+                            <span style="opacity: .7;">telegram</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    <br><br>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module">
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+        setTimeout(function(){
+
+            const keenSlider = new KeenSlider(
+            '#keen-slider',
+            {
+                loop: false,
+                rtl: true,
+                slides: {
+                    origin: 'center',
+                    perView: 1,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 3,
+                            spacing: 32,
+                        },
+                    },
+                },
+            },
+            []
+        )
+
+        const keenSlider2 = new KeenSlider(
+            '#keen-slider2',
+            {
+                loop: false,
+                rtl: true,
+
+                slides: {
+                    origin: 'center',
+                    perView: 1,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 3,
+                            spacing: 32,
+                        },
+                    },
+                },
+            },
+            []
+        )
+        const keenSlider3 = new KeenSlider(
+            '#keen-slider3',
+            {
+                loop: false,
+                rtl: true,
+
+                slides: {
+                    origin: 'center',
+                    perView: 1,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 3,
+                            spacing: 32,
+                        },
+                    },
+                },
+            },
+            []
+        )
+        const keenSlider4 = new KeenSlider(
+            '#keen-slider4',
+            {
+                loop: false,
+                rtl: true,
+
+                slides: {
+                    origin: 'center',
+                    perView: 1,
+                    spacing: 16,
+                },
+                breakpoints: {
+                    '(min-width: 1024px)': {
+                        slides: {
+                            origin: 'auto',
+                            perView: 3,
+                            spacing: 32,
+                        },
+                    },
+                },
+            },
+            []
+        )
+        const keenSlider5 = new KeenSlider(
+            '#keen-slider5',
+            {
+                loop: true,
+                rtl: true,
+
+                slides: {
+                    origin: "center",
+                    perView: 1.25,
+                    spacing: 5,
+
+
+                },
+            },
+            []
+        )
+        const keenSlider6 = new KeenSlider(
+            '#keen-slider6',
+            {
+                loop: true,
+                rtl: true,
+
+                slides: {
+                    origin: 'center',
+                    perView: 1.25,
+                    spacing: 5,
+                },
+            },
+            [
+            ]
+        )
+        },800)
+
+
+        
+    </script>
+
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+     <script src="assets/js/index.js"></script>
+    </div>
+</body>
+
+</html>

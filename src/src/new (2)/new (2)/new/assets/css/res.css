@@ -1,0 +1,129 @@
+@media (min-width: 1200px) {
+
+    /* استایل‌های مربوط به دسکتاپ بزرگ */
+    .nav-mg {
+        margin: 0 30px;
+    }
+
+    .d-md-flex2 {
+        display: flex;
+    }
+
+    .h-sm {
+        font-size: 30px;
+    }
+
+    .spanb-sm {
+        font-size: 20px;
+    }
+    .swiper{
+        height: 220px;
+    }
+    .detail{
+      padding-right: 150px !important;
+    }
+    .all{
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* استایل‌های مربوط به دسکتاپ متوسط */
+    .nav-mg {
+        margin: 0 20px;
+    }
+
+    .h-sm {
+        font-size: 25px;
+    }
+
+    .spanb-sm {
+        font-size: 20px;
+    }
+    .span-sm {
+        font-size:20px;
+    }
+    .swiper{
+        height: 260px;
+    }
+    .detail{
+        padding-right: 120px !important;
+    }
+    .all{
+        font-size: 15px;
+    }
+    .res-float{
+        float: left;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* استایل‌های مربوط به دسکتاپ کوچک */
+    .nav-mg {
+        margin: 0 8px;
+    }
+
+    .h-sm {
+        font-size: 25px;
+    }
+
+    .spanb-sm {
+        font-size: 20px;
+    }
+    .span-sm {
+        font-size: 25px;
+    }
+    .swiper{
+        height: 300px;
+    }
+    .detail{
+        padding-right: 100px !important;
+    }
+    .all{
+        font-size: 20px;
+    }
+    .res-float{
+        float: right;
+        margin-top: 10px;
+      }
+      
+}
+@media (min-width: 1247px) {
+
+}
+
+@media (max-width: 767px) {
+
+    /* استایل‌های مربوط به تبلت و موبایل */
+    .nav-mg {
+        margin: 0 5px;
+    }
+
+    .d-md-flex2 {
+        display: none !important;
+    }
+
+    .h-sm {
+        font-size: 20px;
+    }
+
+    .spanb-sm {
+        font-size: 15px;
+    }
+    .span-sm {
+        font-size: 15px;
+    }
+    .detail{
+        padding-right: 100px !important;
+    }
+    .all{
+        font-size: 12px;
+    }
+    .res-float{
+        float: right;
+        margin-top: 10px;
+      }
+}
