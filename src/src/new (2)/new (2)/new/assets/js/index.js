@@ -60,7 +60,7 @@ const fetchMovies = async (apiUrl, sliderId) => {
     try {
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("Network response was not ok");
-
+console.log(response)
         const movies = await response.json(); 
         addDataToHTML(movies, keenSlider); 
     } catch (error) {
@@ -110,7 +110,7 @@ const addDataToHTML = (movies, keenSlider) => {
 };
 
 // استفاده از تابع برای دو اسلایدر
-fetchMovies("https://fakestoreapi.com/products", "keen-slider");
+fetchMovies("https://dramoir.com/main/movie/?format=json", "keen-slider");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider2");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider3");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider4");

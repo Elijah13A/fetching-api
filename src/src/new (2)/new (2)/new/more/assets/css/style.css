@@ -39,6 +39,17 @@ body {
    transition: all .7s ease-in-out;
 }
 
+.dot{
+   position: absolute; 
+   top: 4px;
+    right: -10px;
+}
+
+.cursor-p{
+   cursor: pointer;
+}
+
+
 .mode-button{
    border: none;
    padding: .8em 2em;

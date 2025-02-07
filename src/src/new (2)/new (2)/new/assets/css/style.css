@@ -60,6 +60,15 @@ body {
    font-weight: 500;
    cursor: pointer;
 }
+.dot{
+   position: absolute; 
+   top: 4px;
+    right: -10px;
+}
+
+.cursor-p{
+   cursor: pointer;
+}
 
 .set-inset {
    box-shadow: inset 1px 1px 4px var(--header-color);
