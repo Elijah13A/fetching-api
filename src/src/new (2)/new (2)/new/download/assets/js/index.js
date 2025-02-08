@@ -225,7 +225,13 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = `imdex.html?id=${foundProduct.id}`;
             document.querySelector('.input').value = '';
         } else {
-            alert("محصولی با این عنوان یافت نشد!");
+            const searchMessage1 = document.getElementById('search-message1');
+            searchMessage1.textContent = 'فیلمی با این عنوان پیدا نشد!'; 
+            // بعد از یک ثانیه متن را پاک کن
+            setTimeout(() => {
+                searchMessage1.textContent = "";
+            }, 2000);
+            document.querySelector('.input').value = '';
         }
     });
 });

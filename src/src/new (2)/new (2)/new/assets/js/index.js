@@ -120,6 +120,7 @@ fetchMovies("https://fakestoreapi.com/products", "keen-slider4");
 document.querySelector('.search-btn').addEventListener('click', async function () {
     const inputElement = document.querySelector('input[data-search]');
     const searchValue = inputElement.value.trim().toLowerCase();
+    const searchMessage = document.getElementById('search-message');
 
     if (!searchValue) return;
 
@@ -131,8 +132,12 @@ document.querySelector('.search-btn').addEventListener('click', async function (
         
         if (foundMovie) {
             window.location.href = `download/imdex.html?id=${foundMovie.id}`;
+            document.querySelector('.sec-search').value = '';
         } else {
-            alert('نتیجه‌ای یافت نشد!');
+            searchMessage.textContent = 'فیلمی با این عنوان پیدا نشد!';
+            searchMessage.style.color = 'red';
+            document.querySelector('.sec-search').value = '';
+
         }
     } catch (error) {
         console.error('خطا در دریافت داده‌ها:', error);
@@ -169,7 +174,13 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = `download/imdex.html?id=${foundProduct.id}`;
             document.querySelector('.input').value = '';
         } else {
-            alert("محصولی با این عنوان یافت نشد!");
+            const searchMessage1 = document.getElementById('search-message1');
+            searchMessage1.textContent = 'فیلمی با این عنوان پیدا نشد!'; 
+            // بعد از یک ثانیه متن را پاک کن
+            setTimeout(() => {
+                searchMessage1.textContent = "";
+            }, 2000);
+            document.querySelector('.input').value = '';
         }
     });
 });

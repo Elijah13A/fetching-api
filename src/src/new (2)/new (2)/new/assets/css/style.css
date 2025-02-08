@@ -65,7 +65,20 @@ body {
    top: 4px;
     right: -10px;
 }
-
+#search-message{
+   color: red;
+   font-size: 13px;
+   margin: 10px 30px;
+   
+}
+#search-message1{
+   color: red;
+   font-size: 13px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+   transition: .5s all ease-in-out;
+}
 .cursor-p{
    cursor: pointer;
 }

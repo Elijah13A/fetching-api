@@ -49,7 +49,14 @@ body {
    cursor: pointer;
 }
 
-
+#search-message1{
+   color: red;
+   font-size: 13px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+   transition: .5s all ease-in-out;
+}
 .mode-button{
    border: none;
    padding: .8em 2em;
