@@ -60,7 +60,6 @@ const fetchMovies = async (apiUrl, sliderId) => {
     try {
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("Network response was not ok");
-console.log(response)
         const movies = await response.json(); 
         addDataToHTML(movies, keenSlider); 
     } catch (error) {
@@ -109,10 +108,68 @@ const addDataToHTML = (movies, keenSlider) => {
     }
 };
 
-// استفاده از تابع برای دو اسلایدر
-fetchMovies("https://dramoir.com/main/movie/?format=json", "keen-slider");
+
+fetchMovies("https://dramoir.com", "keen-slider");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider2");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider3");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider4");
 
     
+
+//search
+document.querySelector('.search-btn').addEventListener('click', async function () {
+    const inputElement = document.querySelector('input[data-search]');
+    const searchValue = inputElement.value.trim().toLowerCase();
+
+    if (!searchValue) return;
+
+    try {
+        const response = await fetch('https://fakestoreapi.com/products'); 
+        const data = await response.json();
+
+        const foundMovie = data.find(item => item.title.toLowerCase().includes(searchValue));
+        
+        if (foundMovie) {
+            window.location.href = `download/imdex.html?id=${foundMovie.id}`;
+        } else {
+            alert('نتیجه‌ای یافت نشد!');
+        }
+    } catch (error) {
+        console.error('خطا در دریافت داده‌ها:', error);
+    }
+});
+
+
+document.querySelector('.delete-btn').addEventListener('click', function () {
+    document.querySelector('input[data-search]').value = ''; // پاک کردن مقدار ورودی
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchIcon = document.querySelector(".magnifier");
+    const searchInput = document.querySelector(".input");
+
+    async function fetchProducts() {
+        try {
+            const response = await fetch("https://fakestoreapi.com/products");
+            return await response.json();
+        } catch (error) {
+            console.error("Error fetching products:", error);
+            return [];
+        }
+    }
+
+    searchIcon.addEventListener("click", async function () {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) return;
+
+        const products = await fetchProducts();
+        const foundProduct = products.find(product => product.title.toLowerCase().includes(query));
+
+        if (foundProduct) {
+            window.location.href = `download/imdex.html?id=${foundProduct.id}`;
+            document.querySelector('.input').value = '';
+        } else {
+            alert("محصولی با این عنوان یافت نشد!");
+        }
+    });
+});

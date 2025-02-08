@@ -194,3 +194,38 @@ const displayMovies=()=>{
 };
 
 fetchProducts();
+
+
+
+//search
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchIcon = document.querySelector(".magnifier");
+    const searchInput = document.querySelector(".input");
+
+    async function fetchProducts() {
+        try {
+            const response = await fetch("https://fakestoreapi.com/products");
+            return await response.json();
+        } catch (error) {
+            console.error("Error fetching products:", error);
+            return [];
+        }
+    }
+
+    searchIcon.addEventListener("click", async function () {
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) return;
+
+        const products = await fetchProducts();
+        const foundProduct = products.find(product => product.title.toLowerCase().includes(query));
+
+        if (foundProduct) {
+            window.location.href = `imdex.html?id=${foundProduct.id}`;
+            document.querySelector('.input').value = '';
+        } else {
+            alert("محصولی با این عنوان یافت نشد!");
+        }
+    });
+});
