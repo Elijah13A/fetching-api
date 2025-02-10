@@ -109,7 +109,7 @@ const addDataToHTML = (movies, keenSlider) => {
 };
 
 
-fetchMovies("https://dramoir.com", "keen-slider");
+fetchMovies("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json", "keen-slider");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider2");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider3");
 fetchMovies("https://fakestoreapi.com/products", "keen-slider4");
