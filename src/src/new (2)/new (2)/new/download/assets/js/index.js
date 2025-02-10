@@ -167,11 +167,13 @@ themeSwitch.addEventListener("click", () => {
 
 //api
 let movieVideo=document.getElementById("myVideo");
-let movieDescription= document.getElementById("movie-description")
-
+let movieDescription= document.getElementById("movie-description");
+let movieGenres=document.getElementById("genres");
+let movieRealease=document.getElementById("release_year");
+let movieRank=document.getElementById("rank");
 const fetchProducts=async ()=>{
     try {
-        const response = await fetch("https://fakestoreapi.com/products");
+        const response = await fetch("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json");
         if (!response.ok) throw new Error("Network Error");
         Movies = await response.json();
         displayMovies();
@@ -184,10 +186,14 @@ const fetchProducts=async ()=>{
 
 const displayMovies=()=>{
     let movieId = new URLSearchParams(window.location.search).get("id");
-    let movie = Movies.find(m=>m.id==movieId);
+    let movie = Movies.movies.find(m=>m.id==movieId);
  if (movie){
     movieVideo.src= movie.image;
     movieDescription.textContent=movie.description;
+    movieGenres.textContent = movie.genres.map(genre => genre.name).join(" ، ");
+movieRealease.textContent=movie.release_year;
+movieRank.textContent=movie.rate;
+
  }
 
 
@@ -206,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchProducts() {
         try {
-            const response = await fetch("https://fakestoreapi.com/products");
+            const response = await fetch("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json");
             return await response.json();
         } catch (error) {
             console.error("Error fetching products:", error);

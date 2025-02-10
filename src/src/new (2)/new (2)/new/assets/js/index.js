@@ -61,7 +61,8 @@ const fetchMovies = async (apiUrl, sliderId) => {
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("Network response was not ok");
         const movies = await response.json(); 
-        addDataToHTML(movies, keenSlider); 
+        console.log(movies);
+        addDataToHTML(movies.movies, keenSlider); 
     } catch (error) {
         console.error("Error fetching Movies:", error);
     }
@@ -80,9 +81,9 @@ const addDataToHTML = (movies, keenSlider) => {
                 <div class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12 poster poster-back">
                     <div style="position: relative;" class="row">
                         <div class="col-md-4 col-6 img-container">
-                            <a href="${movie.url}">
+                            
                                 <img src="${movie.image}" class="img-poster">
-                            </a>
+                           
                         </div>
                         <div class="col-6 col-md-8 info">
                             <h3 class="spanb-sm" style="margin-bottom: 18px;">${movie.title}</h3>
@@ -93,7 +94,7 @@ const addDataToHTML = (movies, keenSlider) => {
                             </div>
                             <div class="f-info">
                                 <span>آخرین قسمت :</span>
-                                <span>${movie.lastEpisode}</span>
+                                <span>${movie.duration}</span>
                             </div>
                         </div>
                         <button class="watch-btn specialbutton">
@@ -110,9 +111,9 @@ const addDataToHTML = (movies, keenSlider) => {
 
 
 fetchMovies("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json", "keen-slider");
-fetchMovies("https://fakestoreapi.com/products", "keen-slider2");
-fetchMovies("https://fakestoreapi.com/products", "keen-slider3");
-fetchMovies("https://fakestoreapi.com/products", "keen-slider4");
+fetchMovies("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json", "keen-slider2");
+fetchMovies("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json", "keen-slider3");
+fetchMovies("https://www.dramoir.com/main/homepage/recent_highest_rated/?format=json", "keen-slider4");
 
     
 
